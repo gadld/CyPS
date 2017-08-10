@@ -16,15 +16,25 @@ TEST_F(TestPrimo, esPrimoCircular){
 	//myst.push(20);
 	//myst.push(30);
 	//myst.push(40);
-	EXPECT_EQ(1,esPrimoCircular("0"));
-	EXPECT_EQ(1,esPrimoCircular("1"));
-	EXPECT_EQ(1,esPrimoCircular("199"));
+	int i=0;
+	int a[10]={2,3,5,7,11,13,17,31,37,71};
+	while(i<10){
+		EXPECT_EQ(1,esPrimoCircular(a[i]))<<i;
+		i++;
+	}/*
+	EXPECT_EQ(1,esPrimoCircular(0));
+	EXPECT_EQ(1,esPrimoCircular(1));
+	EXPECT_EQ(1,esPrimoCircular(199));
 //	EXPECT_EQ(1,esPrimoCircular("23"));	
-	EXPECT_EQ(1,esPrimoCircular("197"));
-	EXPECT_EQ(1,esPrimoCircular("193"));
+	EXPECT_EQ(1,esPrimoCircular(197));
+	EXPECT_EQ(1,esPrimoCircular(193));
+*/
+}
+TEST_F(TestPrimo,todosPrimosCirculares){
+	int i=0;
+	while(i<100){
+                EXPECT_EQ(1,esPrimoCircular(i))<<i;
+                i++;
+        }
+}
 
-}
-TEST_F(TestPrimo, poptest){
-	//myst.pop();
-	//EXPECT_EQ(1,myst.size());
-}

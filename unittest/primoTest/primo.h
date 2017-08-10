@@ -10,9 +10,11 @@ int esPrimo(int num){
 	}
 	return 1;
 }
-int esPrimoCircular(char* num){
-	int n=atoi(num);
-        int max=(int)strlen(num)-1;
+int esPrimoCircular(int n){
+	//int n=itoa(num);
+	char str[12];
+	snprintf(str,10,"%d",n);
+        int max=(int)strlen(str)-1;
 
         for(int i=0;i<=max;i++){
                 if(!esPrimo(n)){
