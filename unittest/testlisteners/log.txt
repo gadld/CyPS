@@ -1,0 +1,15 @@
+Iniciando Test
+TEST CASE: TcnUno
+TEST NAME: tname
+Falla, los detalles son los siguientes:
+Linea del error: 59
+      Expected: 1
+To be equal to: 2
+El tiempo de ejecucion fue: 0.000044
+TEST CASE: TcnDos
+TEST NAME: tname
+El tiempo de ejecucion fue: 0.000002
+El tiempo de ejecucion fue: 0.000045
+El numero de tests ejecutados fue 2
+1 Correctos
+1 Incorrectos
